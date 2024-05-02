@@ -9,7 +9,7 @@ public interface SeleniumInterface {
 	 */
 	void setup(String URL);
 
-	void BrowserName(String BrowserName,String URL);
+	void Browser(BrowserName BrowserName,String URL);
 
 	 WebElement Element (String Type,String Value );
 	

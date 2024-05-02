@@ -23,36 +23,6 @@ public class Seleniumbase implements SeleniumInterface {
 		driver.get(URL);
 		driver.manage().timeouts().implicitlyWait(WaitTime, TimeUnit.SECONDS);	
 	}
-
-	@SuppressWarnings("deprecation")
-	@Override
-	public void BrowserName(String BrowserName, String URL) {
-
-		switch (BrowserName) {
-		case "CHROME":
-			driver= new ChromeDriver();
-
-			break;
-
-		case "EDGE":
-			driver= new EdgeDriver();
-
-			break;
-
-		case "FIREFOX":
-			driver= new FirefoxDriver();
-
-			break;
-
-		default: System.err.println("Driver is not Found");
-		break;
-		}
-		driver.manage().window().maximize();
-		driver.get(URL);
-		driver.manage().timeouts().implicitlyWait(WaitTime, TimeUnit.SECONDS);	
-
-	}
-
 	@Override
 	public void type(WebElement Element, String Input) {
 		
@@ -107,6 +77,36 @@ public class Seleniumbase implements SeleniumInterface {
 		}	
 
 		return null;
+	}
+
+	@SuppressWarnings("deprecation")
+	@Override
+	public void Browser(resource.BrowserName BrowserName, String URL) {
+		
+		switch (BrowserName) {
+		case CHROME:
+			driver= new ChromeDriver();
+
+			break;
+
+		case EDGE:
+			driver= new EdgeDriver();
+
+			break;
+
+		case FIREFOX:
+			driver= new FirefoxDriver();
+
+			break;
+
+		default: System.err.println("Driver is not Found");
+		break;
+		}
+		driver.manage().window().maximize();
+		driver.get(URL);
+		driver.manage().timeouts().implicitlyWait(WaitTime, TimeUnit.SECONDS);	
+
+		
 	}
 
 

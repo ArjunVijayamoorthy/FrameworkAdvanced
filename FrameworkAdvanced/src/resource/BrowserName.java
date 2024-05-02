@@ -1,6 +1,6 @@
 package resource;
 
-public enum Constants {
+public enum BrowserName {
 
 	CHROME,EDGE,FIREFOX,SAFARI
 	
