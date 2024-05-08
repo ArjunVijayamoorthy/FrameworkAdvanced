@@ -7,7 +7,7 @@ import base.Seleniumbase;
 import resource.BrowserName;
 import resource.SelectorName;
 
-public class TSLogin extends Seleniumbase{
+public class CuraLogin extends Seleniumbase{
 	@Test	
 	void TSC001() throws InterruptedException{
 

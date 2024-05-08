@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-08T15:54:55 IST" name="Default suite" finished-at="2024-05-08T15:55:07 IST" duration-ms="12668">
+  <suite started-at="2024-05-08T19:09:29 IST" name="Default suite" finished-at="2024-05-08T19:09:37 IST" duration-ms="8801">
     <groups>
     </groups>
-    <test started-at="2024-05-08T15:54:55 IST" name="Default test" finished-at="2024-05-08T15:55:07 IST" duration-ms="12668">
-      <class name="testcases.TSLogin">
-        <test-method signature="TSC001()[pri:0, instance:testcases.TSLogin@6fa51cd4]" started-at="2024-05-08T15:54:55 IST" name="TSC001" finished-at="2024-05-08T15:55:07 IST" duration-ms="12629" status="PASS">
+    <test started-at="2024-05-08T19:09:29 IST" name="Default test" finished-at="2024-05-08T19:09:37 IST" duration-ms="8801">
+      <class name="testcases.CuraLogin">
+        <test-method signature="TSC001()[pri:0, instance:testcases.CuraLogin@6fa51cd4]" started-at="2024-05-08T19:09:29 IST" name="TSC001" finished-at="2024-05-08T19:09:37 IST" duration-ms="8768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TSC001 -->
-      </class> <!-- testcases.TSLogin -->
+      </class> <!-- testcases.CuraLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
