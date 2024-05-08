@@ -11,10 +11,11 @@ public interface SeleniumInterface {
 
 	void Browser(BrowserName BrowserName,String URL);
 
-	 WebElement Element (String Type,String Value );
+	 WebElement Element (SelectorName SelectorName,String Value );
 	
 	void type(WebElement Element,String Input);
-	
+
+	void Select (WebElement Element,SelectorName Dropdowntype, String Index, String Value, String Text );
 	
 	void click(WebElement Element);
 

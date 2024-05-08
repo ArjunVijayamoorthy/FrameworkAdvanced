@@ -2,6 +2,6 @@ package resource;
 
 public enum BrowserName {
 
-	CHROME,EDGE,FIREFOX,SAFARI
+	CHROME,EDGE,FIREFOX,SAFARI,
 	
 }
