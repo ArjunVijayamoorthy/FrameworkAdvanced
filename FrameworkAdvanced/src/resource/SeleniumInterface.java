@@ -1,6 +1,7 @@
 package resource;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public interface SeleniumInterface {
 
@@ -20,4 +21,6 @@ public interface SeleniumInterface {
 	void click(WebElement Element);
 
 	void close();
+	
+	WebDriverWait wait (WebElement element);
 }

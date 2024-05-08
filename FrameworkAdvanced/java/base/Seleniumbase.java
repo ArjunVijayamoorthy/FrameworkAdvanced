@@ -1,5 +1,6 @@
 package base;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -8,7 +9,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import resource.SelectorName;
 import resource.SeleniumInterface;
@@ -125,15 +128,14 @@ public class Seleniumbase implements SeleniumInterface {
 		}
 
 		return;
-
-
-
 	}
-
-
-
-
-
+	@Override
+	public WebDriverWait wait(WebElement element) {
+		
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(WaitTime));
+		wait.until(ExpectedConditions.visibilityOf(element));
+		return null;
+	}
 }
 
 
